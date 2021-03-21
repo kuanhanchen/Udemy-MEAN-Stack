@@ -10,7 +10,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.post('./api/posts', (req, res, next) => {
+app.post('/api/post', (req, res, next) => {
   const posts = req.body;
   res.status(201).json({
     message: 'post added successfully'
